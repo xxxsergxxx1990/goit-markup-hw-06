@@ -416,18 +416,24 @@
           </div>
           <div class="foot--form">
             <form name="mailing-list">
-<div class="form--container">
-              <label class="foot--label">
-                <p class="foot--form-text">Підпишіться на розсилку</p> 
-                <input type="text" name="user-mail" placeholder="E-mail" class="foot--input" />
-              </label>
-              <button type="submit" class="foot--telegramm">Підписатися
+              <div class="form--container">
+                <label class="foot--label">
+                  <p class="foot--form-text">Підпишіться на розсилку</p>
+                  <input
+                    type="text"
+                    name="user-mail"
+                    placeholder="E-mail"
+                    class="foot--input"
+                  />
+                </label>
+                <button type="submit" class="foot--telegramm">
+                  Підписатися
 
-                <svg width="24" height="24" class="foot--icon-tel">
-                  <use href="./images/sprite.svg#icon-send" ></use>
-                </svg>
-              </button>
-</div>
+                  <svg width="24" height="24" class="foot--icon-tel">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -455,41 +461,48 @@
           <label class="modal--label">
             <p class="modal--input-name">Ім'я</p>
             <div class="modal--decor">
-            <input type="text" name="user-name"  class="modal--input" >
-            <svg width="18" height="18" class="modal--icon">
-              <use href="./images/sprite.svg#icon-modal-user">
-                
-              </use>
-            </svg>
-          </div>
+              <input type="text" name="user-name" class="modal--input" />
+              <svg width="12" height="12" class="modal--icon">
+                <use href="./images/sprite.svg#icon-modal-user"></use>
+              </svg>
+            </div>
           </label>
-          <label  class="modal--label">
+          <label class="modal--label">
             <p class="modal--input-name">Телефон</p>
-<div class="modal--decor">
-            <input type="text" name="user-tel" class="modal--input">
-            <svg width="18" height="18" class="modal--icon">
-              <use href="./images/sprite.svg#icon-modal-tel">
-                
-              </use>
-            </svg>
-</div>
+            <div class="modal--decor">
+              <input type="text" name="user-tel" class="modal--input" />
+              <svg width="12" height="12" class="modal--icon">
+                <use href="./images/sprite.svg#icon-modal-tel"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal--label">
             <p class="modal--input-name">Пошта</p>
             <div class="modal--decor">
-            <input type="text" name="user-mail" class="modal--input" >
-            <svg width="15" height="12" class="modal--icon">
-              <use href="./images/sprite.svg#icon-modal-mail">
-                
-              </use>
-            </svg>
-          </div>
+              <input type="text" name="user-mail" class="modal--input" />
+              <svg width="15" height="12" class="modal--icon">
+                <use href="./images/sprite.svg#icon-modal-mail"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal--label">
-          <p class="modal--input-name">Коментар</p>
-          <textarea name="" rows="10" placeholder="Введіть текст" class="modal--textarea"></textarea>
+            <p class="modal--input-name">Коментар</p>
+            <textarea
+              name=""
+              rows="10"
+              placeholder="Введіть текст"
+              class="modal--textarea"
+            ></textarea>
           </label>
         </form>
+        <div class="modal--treaty">
+          <form >
+            <input type="checkbox" name="check" value="" checked  class="modal--check"/>
+          </form>
+          <p class="modal--treaty-text">Погоджуюся з розсилкою та приймаю </p>
+          <a href="#" class="modal--treaty-link">Умови договору</a>
+        </div>
+        <button type="button" class="modal--btn">Відправити</button>
       </div>
     </div>
 
