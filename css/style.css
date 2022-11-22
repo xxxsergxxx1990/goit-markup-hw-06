@@ -494,11 +494,11 @@ a{
 .backdrop__tittle{
     
 
-margin-bottom: 12px;
-font-size: 20px;
-line-height: 0.86;
-text-align: center;
-letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 0.86;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 .modal__form{
     margin-bottom: 20px;
@@ -607,9 +607,6 @@ border-color: var(--text-accent);
     background-color: var(--text-accent);
     border-color: var(--text-accent);
  }
-
-
-
 
 .modal__treaty-text{
     margin-bottom: 0;
