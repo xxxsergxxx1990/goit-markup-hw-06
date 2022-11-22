@@ -576,16 +576,37 @@ bottom: 12px;
     margin-top: 20px;
 }
 .modal--check{
-    background-color: #212121;;
+    background-color: #212121;
+    opacity: 0;
 }
+
+
+.modal--check-svgtoo{
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid #212121;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property:background-color,border-color,box-shadow ;
+}
+.modal--check-svgtoo:hover {
+    background-color: var(--text-accent);
+    border-color: var(--text-accent);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+ 
+
 .modal--treaty-text{
     margin-bottom: 0;
-    margin-left: 8px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--text-secondColor);
 }
+
 .modal--treaty-link{
     color: var(--text-accent);
     margin-left: 5px;
@@ -606,6 +627,7 @@ bottom: 12px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 /* ----------footer---------- */
 .foot{
