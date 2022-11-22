@@ -582,38 +582,32 @@ border-color: var(--text-accent);
    
 
 .modal__check-box{
+    display: block;
     width: 16px;
     height: 15px;
     margin-right: 8px;
     border: 2px solid #212121;
+    background-image: url(../images/check.svg);
     cursor: pointer;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property:background-color,border-color ;
 }
+.modal__check-box:hover,
+.modal__check-box:focus{
+background-color: var(--text-accent);
+border-color: var(--text-accent);
+}
 
- 
-
-
-
-.modal__check:checked + .modal__check-box:hover {
+ .modal__check:checked + .modal__check-box{
     background-color: var(--text-accent);
     border-color: var(--text-accent);
-    
-}
-.modal__check:checked + .modal__check-box:focus{
-    background-color: var(--text-accent);
-    border-color: var(--text-accent);
-   
+ }
 
-}
-.modal__check:checked + .modal__check-box:checked{
-    background-color: var(--text-accent);
-    border-color: var(--text-accent);
-   
 
-}
+
+
 .modal__treaty-text{
     margin-bottom: 0;
     
