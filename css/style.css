@@ -476,7 +476,7 @@ a{
     top: 8px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 6px;
+    padding: 6px 6px 3px 6px ;
     background: #FFFFFF;
     cursor: pointer;
     transition-duration: 250ms;
@@ -531,12 +531,14 @@ a{
     cursor: pointer;
     
  }
-  .modal__input:hover,
+ .modal__input:hover,
  .modal__input:focus
  {
     fill: var(--text-accent);
     border-color: var(--text-accent);
+    fill: var(--text-accent);
  } 
+
 .modal__textarea{
     padding: 12px 16px;
     max-width: 100%;
@@ -549,6 +551,15 @@ a{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border-color;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--text-secondColor);
 }
 .modal__textarea:hover,
 .modal__textarea:focus,
@@ -559,18 +570,19 @@ border-color: var(--text-accent);
     position: relative;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
+    transition-property: fill,border-color;
     
 }
 .modal__decor:hover,
 .modal__decor:focus{
     border-color: var(--text-accent);
     fill: var(--text-accent);
+    
 }
 .modal__icon{
     position: absolute;
     left: 14px;
-    bottom: 12px;
+    bottom: 14px;
 }
 .modal__treaty{
     display: flex;
@@ -757,6 +769,8 @@ border-color: var(--text-accent);
     width: 358px;
     height: 50px;
     background: #2F303A;
+    color: #FFFFFF;
+    padding-left: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -764,6 +778,9 @@ border-color: var(--text-accent);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border-color;
     cursor: pointer;
+    font-style: inherit;
+    font-size: 14px;
+    line-height: 1.7;
 }
 .foot__input:hover,
 .foot__input:focus{
