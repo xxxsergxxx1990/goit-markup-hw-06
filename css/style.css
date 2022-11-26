@@ -506,6 +506,11 @@ a{
 .modal__label{
     margin-bottom: 10px;
 }
+.modal__label:hover,
+.modal__label:focus{
+    border-color: var(--text-accent);
+    fill: var(--text-accent);
+}
  .modal__input-name{
     margin-top: 10px;
     margin-bottom: 4px;
@@ -557,9 +562,10 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--text-secondColor);
+
+color: rgba(117, 117, 117, 0.5);
 }
 .modal__textarea:hover,
 .modal__textarea:focus,
@@ -590,6 +596,22 @@ border-color: var(--text-accent);
     justify-content: center;
     
 }
+.modal__treaty-link{
+    color: var(--text-accent);
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: revert;
+}
+.modal__treaty-text{
+    margin-bottom: 0;
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--text-secondColor);
+}
 .modal__check{
     
     opacity: 0;
@@ -611,7 +633,7 @@ border-color: var(--text-accent);
 }
 .modal__check-box:hover,
 .modal__check-box:focus{
-    background-color: var(--text-accent);
+    
     border-color: var(--text-accent);
 }
 
@@ -620,19 +642,9 @@ border-color: var(--text-accent);
     border-color: var(--text-accent);
  }
 
-.modal__treaty-text{
-    margin-bottom: 0;
-    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--text-secondColor);
-}
 
-.modal__treaty-link{
-    color: var(--text-accent);
-    margin-left: 5px;
-}
+
+
 .modal__btn{
     margin-left: auto;
     margin-right: auto;
@@ -644,6 +656,7 @@ border-color: var(--text-accent);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--text-accent);
     border: none;
