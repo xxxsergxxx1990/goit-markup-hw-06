@@ -510,6 +510,7 @@ a{
 .modal__label:focus{
     border-color: var(--text-accent);
     fill: var(--text-accent);
+  
 }
  .modal__input-name{
     margin-top: 10px;
@@ -565,7 +566,7 @@ a{
     line-height: 1.16;
     letter-spacing: 0.01em;
 
-color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
 }
 .modal__textarea:hover,
 .modal__textarea:focus,
